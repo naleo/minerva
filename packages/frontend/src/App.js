@@ -103,7 +103,7 @@ const App = () => {
           {/* <Route exact path={"/home"} element={<Home />} /> */}
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/" element={<Login />} />
-          {/* <Route exact path="/register" element={<Register />} /> */}
+          <Route exact path="/register" element={<Register />} />
           {/* <Route exact path="/profile" element={<Profile />} /> */}
           {/* <Route path="/user" element={<BoardUser />} /> */}
           {/* <Route path="/mod" element={<BoardModerator />} /> */}

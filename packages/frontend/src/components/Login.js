@@ -58,8 +58,8 @@ const Login = () => {
         }
     };
     return (
-        <div className="col-md-12">
-            <div className="card card-container">
+        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+            <div className="bg-black">
                 <img
                     src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"
                     alt="profile-img"
