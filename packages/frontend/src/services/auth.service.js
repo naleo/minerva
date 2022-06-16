@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL = "http://localhost:3000/api/auth";
+const API_URL = "http://localhost:3000/api/";
 
 //TODO add more fields instead of just username, email, password
 const register = (username, email, password) => {

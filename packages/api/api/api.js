@@ -4,7 +4,6 @@ const cookieSession = require("cookie-session");
 const config = require("./config");
 
 const routes = require("./api.routes");
-const authRoutes = require("./routes/auth.routes");
 
 //allow for .env file usage
 
@@ -23,7 +22,6 @@ app.use(
 
 app.use(express.json());
 app.use("/api", routes);
-app.use("/", authRoutes);
 app.listen(port, () => {
     console.log("Server has started!");
 });
