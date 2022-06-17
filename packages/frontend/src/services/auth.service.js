@@ -2,11 +2,15 @@ import axios from "axios";
 const API_URL = "http://localhost:3000/api/";
 
 //TODO add more fields instead of just username, email, password
-const register = (username, email, password) => {
+const register = (firstName, lastName, birthDate, username, email, password, gradeLevel) => {
     return axios.post(API_URL + "register", {
+        firstName,
+        lastName,
+        birthDate,
         username,
         email,
         password,
+        gradeLevel,
     });
 };
 
