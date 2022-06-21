@@ -8,6 +8,8 @@ import Register from "./components/Register";
 import Home from "./components/Home";
 import Profile from "./components/Profile";
 import AssignmentsPage from "./components/AssignmentsPage"
+import AssignmentPage from "./components/AssignmentDetailPage"
+import NewAssignment from "./components/NewAssignment"
 // import AuthVerify from "./common/AuthVerify";
 import EventBus from "./common/EventBus";
 const App = () => {
@@ -97,6 +99,8 @@ const App = () => {
           <Route exact path={"/home"} element={<Home />} />
           <Route exact path="/login" element={<Login />} />
           <Route exact path="/assignmentsPage" element={<AssignmentsPage />} />
+          <Route exact path="/assignments/new" element={<NewAssignment />} />
+          <Route exact path="/assignments/:assignmentId" element={<AssignmentPage />} />
           <Route exact path="/register" element={<Register />} />
           <Route exact path="/profile" element={<Profile />} />
         </Routes>
